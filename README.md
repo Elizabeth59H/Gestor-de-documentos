@@ -22,12 +22,13 @@ Una herramienta de automatización escrita en Python que organiza archivos de un
 
 Ideal para mantener limpia y organizada tu carpeta de Descargas o Documentos.
 
-🔧 2. Tecnologías utilizadas
+
 ## 🔧 Tecnologías utilizadas
 
 - Python 3.10+
 - SQLite (base de datos embebida)
 - Módulos estándar: `os`, `shutil`, `sqlite3`, `datetime`, `pathlib`
+
  
 ## 📂 Estructura del proyecto
 
@@ -41,8 +42,9 @@ file-organizer-sql/
 ├── requirements.txt
 └── .gitignore
 
-🚀 4. Instalación y ejecución
-## 🚀 Instalación y ejecución
+
+
+## 🚀   4. Instalación y ejecución
 
 1. Clona este repositorio:
  
@@ -62,14 +64,10 @@ python main.py
 
 5. Introduce la ruta absoluta de la carpeta que quieres organizar cuando se te solicite.  
 
-
-
----
-
+ 
 ### 📚 5. **¿Cómo funciona?**
 
-```md
-## 📚 ¿Cómo funciona?
+ 
 
 - El script escanea todos los archivos en la carpeta que el usuario proporciona.
 - Determina el tipo de archivo según su extensión.
@@ -83,8 +81,8 @@ python main.py
   - Fecha de modificación del archivo
   - Fecha y hora del movimiento
 
-🛠️ 6. Funcionalidades actuales
-## 🛠️ Funcionalidades
+##  🛠️ 6. Funcionalidades actuales
+ 
 
 ✅ Organización automática por tipo de archivo  
 ✅ Registro en base de datos de cada archivo movido  
@@ -92,8 +90,8 @@ python main.py
 ✅ Totalmente local y sin dependencias externas
 
 
-🔮 7. Posibles mejoras futuras (roadmap)
-## 🔮 Posibles mejoras futuras
+  
+## 🔮 Posibles mejoras futuras (roadmap)
 
 - Interfaz gráfica (Tkinter o PyQt)
 - Organización por fecha o tamaño
@@ -101,9 +99,8 @@ python main.py
 - Eliminación de archivos duplicados
 - Visualización de estadísticas (cuántos archivos movidos, espacio liberado)
 - Exportación del historial a CSV o PDF
-
-🪪 8. Licencia
-## 🪪 Licencia
+ 
+## 8. Licencia
 
 Este proyecto está bajo la licencia MIT. Puedes usarlo, modificarlo y distribuirlo libremente.
 
