@@ -84,6 +84,40 @@ python main.py
   - Fecha de modificación del archivo
   - Fecha y hora del movimiento
 
+🛠️ 6. Funcionalidades actuales
+## 🛠️ Funcionalidades
 
+✅ Organización automática por tipo de archivo  
+✅ Registro en base de datos de cada archivo movido  
+✅ Evita sobrescribir archivos duplicados  
+✅ Totalmente local y sin dependencias externas
+
+
+🔮 7. Posibles mejoras futuras (roadmap)
+## 🔮 Posibles mejoras futuras
+
+- Interfaz gráfica (Tkinter o PyQt)
+- Organización por fecha o tamaño
+- Configuración personalizada con archivo JSON
+- Eliminación de archivos duplicados
+- Visualización de estadísticas (cuántos archivos movidos, espacio liberado)
+- Exportación del historial a CSV o PDF
+
+🪪 8. Licencia
+## 🪪 Licencia
+
+Este proyecto está bajo la licencia MIT. Puedes usarlo, modificarlo y distribuirlo libremente.
+
+✅ ¿Qué hacer ahora?
+
+Copia y pega todo esto en tu archivo README.md. Cuando estés listo, dime si quieres que:
+
+Te ayude a generar capturas de pantalla o GIFs para agregar al README.
+
+Agreguemos un archivo LICENSE.
+
+Preparamos un botón de GitHub Actions para correr automáticamente el script (ideal para tareas programadas).
+
+Lo empaquetamos como un ejecutable .exe o .app.
 
 
