@@ -45,8 +45,7 @@ file-organizer-sql/
 ## 🚀 Instalación y ejecución
 
 1. Clona este repositorio:
-
-```bash
+ 
 git clone https://github.com/tuusuario/file-organizer-sql.git
 cd file-organizer-sql
 
@@ -61,7 +60,7 @@ pip install -r requirements.txt
 
 python main.py
 
-5. Introduce la ruta absoluta de la carpeta que quieres organizar cuando se te solicite. ´´´
+5. Introduce la ruta absoluta de la carpeta que quieres organizar cuando se te solicite.  
 
 
 
