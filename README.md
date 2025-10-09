@@ -23,7 +23,7 @@ Una herramienta de automatización escrita en Python que organiza archivos de un
 Ideal para mantener limpia y organizada tu carpeta de Descargas o Documentos.
 
 
-## 🔧 Tecnologías utilizadas
+## 🔧 Tecnologías utilizadas.
 
 - Python 3.10+
 - SQLite (base de datos embebida)
