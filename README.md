@@ -55,9 +55,11 @@ cd file-organizer-sql
 
 python -m venv venv
 source venv/bin/activate   # En Windows: venv\Scripts\activate
+
 3.Instala las dependencias (ninguna por ahora, pero útil para el futuro):
 
 pip install -r requirements.txt
+
 4. Ejecuta el script:
 
 python main.py
