@@ -1,121 +1,99 @@
-# Gestor de documentos
-Aplicación de organización de archivos con soporte en SQL.
+# 🗂️ Gestor de Documentos con SQLite
 
-✅ Nombre y descripción del proyecto
+**Gestor de Documentos** es una herramienta desarrollada en **Python** que organiza automáticamente los archivos de una carpeta en subcarpetas según su tipo (documentos, imágenes, vídeos, etc.) y registra cada movimiento en una base de datos **SQLite**, manteniendo un historial completo.
 
-🔧 Tecnologías utilizadas
+Ideal para mantener ordenadas carpetas como **Descargas** o **Documentos** 📁✨
 
-📂 Estructura del proyecto
+---
 
-🚀 Instalación y ejecución
+## 🚀 Tecnologías utilizadas
 
-📸 Capturas de pantalla (opcional)
+- 🐍 **Python 3.10+**
+- 🧱 **SQLite** (base de datos local)
+- 📦 Módulos estándar: `os`, `shutil`, `sqlite3`, `datetime`, `pathlib`
 
-📚 Cómo funciona
+---
 
-🛠️ Funcionalidades
-
-
-# 🗂️ File Organizer + SQLite Logger
-
-Una herramienta de automatización escrita en Python que organiza archivos de una carpeta en subcarpetas según su tipo (documentos, imágenes, vídeos, etc.) y **registra cada movimiento en una base de datos SQLite** para llevar un historial completo.
-
-Ideal para mantener limpia y organizada tu carpeta de Descargas o Documentos.
-
-
-## 🔧 Tecnologías utilizadas.
-
-- Python 3.10+
-- SQLite (base de datos embebida)
-- Módulos estándar: `os`, `shutil`, `sqlite3`, `datetime`, `pathlib`
-
- 
 ## 📂 Estructura del proyecto
 
-file-organizer-sql/
+Gestor-de-documentos/
+│
 ├── main.py # Script principal
 ├── file_organizer/
+│ ├── init.py
 │ ├── organizer.py # Lógica para organizar archivos
 │ └── db.py # Lógica para la base de datos SQLite
 ├── organized_files.db # Base de datos generada automáticamente
-├── README.md
-├── requirements.txt
-└── .gitignore
+└── README.md # Documentación del proyecto
 
+yaml
+Copiar código
 
+---
 
-## 🚀   4. Instalación y ejecución
+## 🧠 ¿Cómo funciona?
 
-1. Clona este repositorio:
- 
-git clone https://github.com/tuusuario/file-organizer-sql.git
-cd file-organizer-sql
+1. El usuario introduce la ruta de la carpeta que desea organizar.
+2. El programa escanea los archivos dentro de esa carpeta.
+3. Los mueve a subcarpetas según su tipo:
+   - **Documentos/** (`.pdf`, `.docx`, `.txt`, etc.)
+   - **Imágenes/** (`.jpg`, `.png`, `.gif`, etc.)
+   - **Videos/** (`.mp4`, `.avi`, etc.)
+   - **Otros/** (todo lo demás)
+4. Si un archivo ya existe, se le agrega una marca de tiempo para evitar sobrescribirlo.
+5. Cada movimiento se guarda en la base de datos `organized_files.db` con:
+   - Nombre del archivo
+   - Extensión
+   - Ruta original
+   - Nueva ruta
+   - Fecha de modificación
+   - Fecha y hora del movimiento
 
-2. (Opcional) Crea un entorno virtual:
+---
 
-python -m venv venv
-source venv/bin/activate   # En Windows: venv\Scripts\activate
-
-3.Instala las dependencias (ninguna por ahora, pero útil para el futuro):
-
-pip install -r requirements.txt
-
-4. Ejecuta el script:
-
-python main.py
-
-5. Introduce la ruta absoluta de la carpeta que quieres organizar cuando se te solicite.  
-
- 
-### 📚 5. **¿Cómo funciona?**
-
- 
-
-- El script escanea todos los archivos en la carpeta que el usuario proporciona.
-- Determina el tipo de archivo según su extensión.
-- Mueve el archivo a una subcarpeta correspondiente: `/Documentos`, `/Imágenes`, `/Videos`, etc.
-- Si el archivo ya existe, le añade una marca de tiempo para evitar sobreescribir.
-- Cada movimiento se guarda en una base de datos SQLite (`organized_files.db`) con:
-  - Nombre del archivo
-  - Extensión
-  - Ruta original
-  - Nueva ruta
-  - Fecha de modificación del archivo
-  - Fecha y hora del movimiento
-
-##  🛠️ 6. Funcionalidades actuales
- 
+## 🛠️ Funcionalidades actuales
 
 ✅ Organización automática por tipo de archivo  
-✅ Registro en base de datos de cada archivo movido  
+✅ Registro detallado en base de datos SQLite  
 ✅ Evita sobrescribir archivos duplicados  
-✅ Totalmente local y sin dependencias externas
+✅ Totalmente local y sin dependencias externas  
 
+---
 
-  
-## 🔮 Posibles mejoras futuras (roadmap)
+## 🔮 Mejoras futuras
 
-- Interfaz gráfica (Tkinter o PyQt)
-- Organización por fecha o tamaño
-- Configuración personalizada con archivo JSON
-- Eliminación de archivos duplicados
-- Visualización de estadísticas (cuántos archivos movidos, espacio liberado)
-- Exportación del historial a CSV o PDF
- 
-## 8. Licencia
+✨ Interfaz gráfica con **Tkinter** o **PyQt**  
+📅 Organización por fecha o tamaño  
+⚙️ Configuración personalizada mediante archivo JSON  
+📊 Estadísticas: cantidad de archivos movidos y espacio liberado  
+📤 Exportación del historial a **CSV** o **PDF**
 
-Este proyecto está bajo la licencia MIT. Puedes usarlo, modificarlo y distribuirlo libremente.
+---
 
-✅ ¿Qué hacer ahora?
+## 💻 Instalación y ejecución
 
-Copia y pega todo esto en tu archivo README.md. Cuando estés listo, dime si quieres que:
+1️⃣ Clona este repositorio:
 
-Te ayude a generar capturas de pantalla o GIFs para agregar al README.
+```bash
+git clone https://github.com/tuusuario/file-organizer-sql.git
+cd file-organizer-sql
+2️⃣ (Opcional) Crea un entorno virtual:
 
-Agreguemos un archivo LICENSE.
+bash
+Copiar código
+python -m venv venv
+venv\Scripts\activate   # En Windows
+3️⃣ Ejecuta el programa:
 
-Preparamos un botón de GitHub Actions para correr automáticamente el script (ideal para tareas programadas).
+bash
+Copiar código
+python main.py
+4️⃣ Ingresa la ruta absoluta de la carpeta que deseas organizar, por ejemplo:
 
-Lo empaquetamos como un ejecutable .exe o .app.
+makefile
+Copiar código
+C:\Users\Beatriz\Downloads
+📚 Autor
+👩‍💻 Elizabeth Herrera
 
-
+⭐ Si te gusta este proyecto, no olvides dejar una estrella en GitHub.
