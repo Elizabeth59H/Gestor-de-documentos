@@ -13,8 +13,7 @@ Ideal para mantener ordenadas carpetas como **Descargas** o **Documentos** 📁�
 - 📦 Módulos estándar: `os`, `shutil`, `sqlite3`, `datetime`, `pathlib`
 
 ---
-
-## 📂 Estructura del proyecto
+```## 📂 Estructura del proyecto
 
 Gestor-de-documentos/
 │
@@ -26,8 +25,8 @@ Gestor-de-documentos/
 ├── organized_files.db # Base de datos generada automáticamente
 └── README.md # Documentación del proyecto
 
-yaml
 Copiar código
+```
 
 ---
 
